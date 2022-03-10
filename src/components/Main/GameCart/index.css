@@ -1,0 +1,30 @@
+.GameCart {
+  cursor: pointer;
+  width: 350px;
+  height: 280px;
+  transition-duration: 0.5s;
+  margin: 20px 20px;
+  border-radius: 10px;
+}
+.GameCart:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: 1px 1px 15px rgb(68, 67, 67);
+}
+
+.GameCart__img {
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  max-width: 100%;
+}
+
+.GameCart__gameName {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.GameCart__NavLink {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}

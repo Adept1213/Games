@@ -1,0 +1,11 @@
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  font-size: 50px;
+  font-family: "Catamaran", sans-serif;
+  height: 150px;
+  width: 100%;
+}

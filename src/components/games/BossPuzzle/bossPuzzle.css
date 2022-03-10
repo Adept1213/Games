@@ -1,0 +1,56 @@
+.bossPuzzle {
+  display: flex;
+  justify-content: center;
+  background-color: #53c6c6;
+  height: 100%;
+  padding-top: 150px;
+}
+
+.bossPuzzle__puzzle,
+.bossPuzzle__container,
+.bossPuzzle__puzzleField {
+  border-radius: 10px;
+}
+
+.bossPuzzle__container,
+.bossPuzzle__puzzleField,
+.bossPuzzle__puzzle {
+  display: flex;
+  justify-content: center;
+}
+
+.bossPuzzle__container {
+  width: 650px;
+  height: 650px;
+  background-color: #c28147;
+  align-items: center;
+}
+
+.bossPuzzle__puzzleField {
+  width: 600px;
+  height: 600px;
+  background-color: azure;
+  flex-wrap: wrap;
+}
+
+.bossPuzzle__puzzle,
+.bossPuzzle__whitePuzzle {
+  width: 150px;
+  height: 150px;
+}
+
+.bossPuzzle__puzzle {
+  border: solid 1px black;
+  box-sizing: border-box;
+  background-color: bisque;
+  align-items: center;
+
+  font-size: 35px;
+  font-family: "Catamaran", sans-serif;
+  user-select: none;
+  border-collapse: collapse;
+}
+
+.bossPuzzle__whitePuzzle {
+  background-color: azure;
+}
