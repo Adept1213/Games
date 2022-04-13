@@ -5,7 +5,7 @@ import "./bossPuzzle.css";
 import Puzzle from "./Puzzle";
 
 const BossPuzzle = () => {
-  const store = useSelector((store: RootState) => store);
+  const store = useSelector((store: RootState) => store.bossPuzzle);
   const emptyPuzzleIndex = store.findIndex((element) => element === 16);
 
   return (

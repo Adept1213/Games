@@ -26,6 +26,7 @@ const App = () => {
           <Route path={BossPuzzleRoute} element={<BossPuzzle />} />
           <Route path={PairRoute} element={<Pair />} />
           <Route path={InProgressRoute} element={<InProgress />} />
+          <Route path="*" element={<Main />} />
         </Route>
       </Routes>
     </>

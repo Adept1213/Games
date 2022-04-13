@@ -48,9 +48,10 @@
   font-size: 35px;
   font-family: "Catamaran", sans-serif;
   user-select: none;
-  border-collapse: collapse;
+  cursor: pointer;
 }
 
 .bossPuzzle__whitePuzzle {
   background-color: azure;
+  user-select: none;
 }

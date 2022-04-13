@@ -12,3 +12,14 @@ export interface IPuzzle {
   store: number[];
   emptyPuzzleIndex: number;
 }
+
+export interface ISnake {
+  x: number;
+  y: number;
+}
+
+export interface ISnakeStore {
+  score: number;
+  eat: ISnake;
+  snake: ISnake[];
+}
