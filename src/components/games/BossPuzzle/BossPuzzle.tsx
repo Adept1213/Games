@@ -6,7 +6,6 @@ import Puzzle from "./Puzzle";
 
 const BossPuzzle = () => {
   const store = useSelector((store: RootState) => store.bossPuzzle);
-  const emptyPuzzleIndex = store.findIndex((element) => element === 16);
 
   return (
     <div className="bossPuzzle">
@@ -14,13 +13,7 @@ const BossPuzzle = () => {
         <div className="bossPuzzle__puzzleField">
           {store.map((textNumber, index) =>
             textNumber !== 16 ? (
-              <Puzzle
-                key={index}
-                textNumber={textNumber}
-                position={index}
-                store={store}
-                emptyPuzzleIndex={emptyPuzzleIndex}
-              />
+              <Puzzle key={index} textNumber={textNumber} position={index} />
             ) : (
               <div className="bossPuzzle__whitePuzzle" key={textNumber}></div>
             )

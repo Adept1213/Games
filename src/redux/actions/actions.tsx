@@ -1,19 +1,19 @@
 import {
   CHANGE_PUZZLE_POSITION,
+  OPEN_CLOSE_CARD,
   SNAKE_MOVE_BOTTOM,
   SNAKE_MOVE_LEFT,
   SNAKE_MOVE_RIGHT,
   SNAKE_MOVE_TOP,
+  START_NEW_GAME_PAIR,
 } from "../../constants/reducerConstants";
-import { ISnake } from "../../types/types";
 
-export function actionChangePuzzlePosition(store: number[]) {
+export function actionChangePuzzlePosition(position: number) {
   return {
     type: CHANGE_PUZZLE_POSITION,
-    payload: store,
+    payload: position,
   };
 }
-
 export function actionSnakeMoveRight() {
   return {
     type: SNAKE_MOVE_RIGHT,
@@ -32,5 +32,17 @@ export function actionSnakeMoveTop() {
 export function actionSnakeMoveBottom() {
   return {
     type: SNAKE_MOVE_BOTTOM,
+  };
+}
+export function actionOpenCloseCard(id: number) {
+  return {
+    type: OPEN_CLOSE_CARD,
+    payload: id,
+  };
+}
+
+export function actionStartNewGame() {
+  return {
+    type: START_NEW_GAME_PAIR,
   };
 }

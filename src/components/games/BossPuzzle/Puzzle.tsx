@@ -1,20 +1,23 @@
-import React from "react";
+import React, { memo } from "react";
 import { useDispatch } from "react-redux";
-import { IPuzzle } from "../../../types/types";
+import { actionChangePuzzlePosition } from "../../../redux/actions/actions";
 import "./bossPuzzle.css";
-import { puzzleHandler } from "./helpers";
 
-const Puzzle = ({ textNumber, position, store, emptyPuzzleIndex }: IPuzzle) => {
+const Puzzle = ({
+  textNumber,
+  position,
+}: {
+  textNumber: number;
+  position: number;
+}) => {
   const dispatch = useDispatch();
+  const handler = () => dispatch(actionChangePuzzlePosition(position));
 
   return (
-    <div
-      className="bossPuzzle__puzzle"
-      onClick={() => puzzleHandler(store, position, emptyPuzzleIndex, dispatch)}
-    >
+    <div className="bossPuzzle__puzzle" onClick={handler}>
       {textNumber}
     </div>
   );
 };
 
-export default Puzzle;
+export default memo(Puzzle);

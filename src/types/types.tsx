@@ -23,3 +23,10 @@ export interface ISnakeStore {
   eat: ISnake;
   snake: ISnake[];
 }
+
+export interface ICard {
+  id: number;
+  icon: string;
+  open: boolean;
+  guessed: boolean;
+}
